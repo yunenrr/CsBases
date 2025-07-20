@@ -12,3 +12,4 @@ C:\Proyectos_dev\DevTalles\DotNET\CsBases\obj\Debug\net8.0\refint\CsBases.dll
 C:\Proyectos_dev\DevTalles\DotNET\CsBases\obj\Debug\net8.0\CsBases.pdb
 C:\Proyectos_dev\DevTalles\DotNET\CsBases\obj\Debug\net8.0\CsBases.genruntimeconfig.cache
 C:\Proyectos_dev\DevTalles\DotNET\CsBases\obj\Debug\net8.0\ref\CsBases.dll
+C:\Proyectos_dev\DevTalles\DotNET\CsBases\obj\Debug\net8.0\CsBases.sourcelink.json
