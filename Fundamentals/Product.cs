@@ -1,6 +1,6 @@
 namespace CsBases.Fundamentals;
 
-public class Product: IProduct
+public class Product : IProduct
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -22,8 +22,23 @@ public class Product: IProduct
         Price -= discountAmount;
     }
 
-    public string GetDescription()
+    public virtual string GetDescription() // Virtual permite que las clases derivadas puedan sobrescribir este método
     {
         return $"{Name} - {Price:C}";
+    }
+}
+
+class ServiceProduct : Product
+{
+    public int DurationInDays { get; set; }
+    public ServiceProduct(string name, decimal price, int durationInDays)
+    : base(name, price)
+    {
+        DurationInDays = durationInDays;
+    }
+    
+    public override string GetDescription() // Override para proporcionar una descripción específica para los servicios
+    {
+        return $"{base.GetDescription()} - Duración: {DurationInDays} días";
     }
 }
